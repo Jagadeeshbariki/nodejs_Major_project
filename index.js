@@ -4,6 +4,8 @@ const port = 8000;
 
 // using the routers
 app.use('./', require('./routes'));
+app.set('view engine', ejs);
+app,set('views', './views');
 
 
 app.listen(port, (err)=>{
